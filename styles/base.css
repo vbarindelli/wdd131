@@ -1,5 +1,4 @@
 body {
-
     font-family: "Raleway", sans-serif;
 }
 
@@ -121,14 +120,6 @@ h3 {
     grid-column: 3 / 5;
     display: block;
     position: relative;
-}
-
-.resources ul li:hover {
-    border: 1px solid #fff;
-    text-decoration: overline;
-    background-color: rgb(247, 237, 172);
-    border-radius: 8px;
-
 }
 
 
