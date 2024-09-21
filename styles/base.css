@@ -42,22 +42,15 @@ h1 {
 .navbar ul li {
     text-align: center;
     list-style-type: none;
-    flex-grow: 1;
+    flex: 1 1 100%;
 
 }
 
-.navbar ul li:hover {
+nav a:hover {
     border: 1px solid #fff;
-    text-decoration: overline;
     background-color: rgb(193, 199, 184);
     border-radius: 8px;
 
-}
-
-
-.container .navbar ul li {
-    padding: 10px;
-    margin: 0 10px;
 }
 
 
@@ -86,7 +79,8 @@ h2 {
 }
 
 .name {
-    color: rgb(243, 206, 212);;
+    color: rgb(243, 206, 212);
+    ;
 
 }
 
@@ -147,5 +141,5 @@ footer {
 }
 
 #lastModified {
-    color:  rgb(243, 206, 212);
+    color: rgb(243, 206, 212);
 }
