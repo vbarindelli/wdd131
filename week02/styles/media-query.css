@@ -19,6 +19,7 @@ main {
 }
 
 section {
+    grid-row: 2/3;
     padding: 1rem;
     background-color: rgb(216, 231, 247);
 }
