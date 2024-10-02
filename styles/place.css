@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: purple;
+    color: beige;
+    text-align: center;
+}
+
+footer {
+    background-color: purple;
+    color: beige;
+    text-align: center;
+}
+
+main {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+section {
+    display: grid;
+    place-items: center;
+}
+
+.icon {
+    max-width: 80px;
+}
+
+ul li {
+    list-style-type: none;
+}

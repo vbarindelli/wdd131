@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaga</title>
+    <meta name="author" content="Virginia Haedo">
+    <meta name="description" content="Information about Malaga, Spain.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Malaga</h1>
+    </header>
+    <main>
+        <div class=container>
+            <picture>
+                <source media="(min-width: 960px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Malaga, Spain photograph" width="#" height="#">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li> Area: 398,25 km² </li>
+                    <li> Population: 1.778.275 </li>
+                    <li> Capital: Malaga </li>
+                    <li> Languages: Spanish</li>
+                    <li> Currency: Euro </li>
+                    <li> Time Zone: GMT+2 </li>
+                    <li> Calling Code: 34 </li>
+                    <li> Internet TLD: .es </li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img class="icon" src="images/sunny_icon.svg" alt="Sun and cloud icon.">
+                <ul>
+                    <li> Temperature: 24 C°</li>
+                    <li> Conditions: Mostly Cloudy</li>
+                    <li> Wind: 15 km/h</li>
+                    <li> Wind Chill: <span id="windChill"></span></li>
+                </ul>
+            </section>
+            <div class="weather">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

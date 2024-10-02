@@ -1,0 +1,56 @@
+@media screen and (min-width: 1000px) {
+
+    .container {
+        position: relative;
+        max-width: 400px;
+        /* Maximum width */
+        margin: 0 auto;
+        /* Center it */
+    }
+
+
+    .container .data {
+        position: absolute;
+        top: 150px;
+        background: rgb(0, 0, 0);
+        background: rgba(252, 252, 252, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+    .data h2 {
+       margin-left: -2em;
+    }
+    .container .weather {
+        position: absolute;
+        /* Position the background text */
+        bottom: 0;
+        /* At the bottom. Use top:0 to append it to the top */
+        left: 110px;
+        background: beige;
+        /* Fallback color */
+        background: rgba(252, 252, 252, 0.5);
+        /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        /* Grey text */
+        width: 100%;
+        /* Full width */
+        padding: 20px;
+        /* Some padding */
+    }
+
+    h2 {
+        background: green;
+        padding: 1em;
+    }
+
+    .weather h2:after {
+        content: "⛅";
+        padding: 1em;
+        display: inline-block
+    }
+
+    .icon {
+        display: none;
+    }
+}

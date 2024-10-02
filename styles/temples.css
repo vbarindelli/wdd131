@@ -60,7 +60,7 @@ nav {
 
 .show li {
     display: block;
-}
+} 
 
 #menu.show::before {
     position: absolute;
