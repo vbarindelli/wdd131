@@ -40,10 +40,11 @@
         padding: 1em;
         width: 100%;
         margin-left: -3em;
-        color: white;
+        color: beige;
+
     }
 
-    .weather h2:after {
+    .weather h2::after {
         content: "⛅";
         padding-left: 1em;
         display: inline-block
@@ -58,8 +59,8 @@
         height: auto;
     }
 
-    
 
-    
+
+
 
 }
