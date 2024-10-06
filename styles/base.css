@@ -121,11 +121,9 @@ h3 {
 
 
 footer {
-    grid-column: 1 / 5;
     background: rgb(142, 172, 205);
     text-align: center;
     padding: 10px;
-
 }
 
 #lastModified {
