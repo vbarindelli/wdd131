@@ -1,0 +1,42 @@
+@media screen and (min-width: 1366px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    h2 {
+        display: block;
+
+    }
+
+}
+
+@media screen and (min-width: 1520px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .5rem .75rem;
+    color: beige;
+}
+
+#menu::before {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    content: "☰";
+}
+
+
+nav {
+    width: 600px;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    color: beige;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    content: "\00d7";
+}
+
+header {
+    background-color: #004466;
+    color: beige;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+main {
+    max-width: 80em;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: rem;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    margin: 1em;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #004466;
+    color: beige;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    grid-row: 1/2;
+    font-size: xx-large;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-row: 2/3;
+}
+
+section {
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
