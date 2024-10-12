@@ -100,6 +100,20 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/400x250/madrid-spain-mormon-temple-954942-wallpaper.jpg"
     },
+    {
+        templeName: "Logan Utah",
+        location: "Logan, Utah",
+        dedicated: "1876, October, 6",
+        area: 119619,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-temple-768119-wallpaper.jpg"
+    },
+    {
+        templeName: "St. George Utah",
+        location: "St. George, Utah",
+        dedicated: "1871, January, 31",
+        area: 143696,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-lds-894724-wallpaper.jpg"
+    },
 ];
 
 createTempleCard(temples);
