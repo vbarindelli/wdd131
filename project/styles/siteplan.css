@@ -10,12 +10,16 @@ main {
 
 header {
     background-color: #F8A31A;
+
+
+}
+
+h1 {
     font-family: "Qwitcher Grypen", cursive;
     font-weight: 700;
     font-size: 3em;
     font-style: normal;
     text-align: center;
-
 }
 
 #menu {
@@ -90,6 +94,7 @@ picture img {
 
 footer {
     background-color: #272635;
+    padding: 1em;
     color: beige;
     text-align: center;
 }
