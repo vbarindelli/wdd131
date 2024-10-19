@@ -1,6 +1,8 @@
 .wf1,
 header,
-footer {
+footer,
+h1,
+p {
     font-family: "Raleway", sans-serif;
 }
 
