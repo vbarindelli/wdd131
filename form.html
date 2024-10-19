@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Virginia Haedo">
+    <meta name="description" content="Product review form">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form method="get" action="review.html" class="wf1">
+        <fieldset>
+
+            <label>Product Name</label>
+            <select name="product" required id="productName">
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <label>Overall Rating</label>
+
+            <label><input id="starRating" type="radio" name="audience" value="star" required>☆ </label>
+            <label><input id="starRating" type="radio" name="audience" value="star" required>☆☆ </label>
+            <label><input id="starRating" type="radio" name="audience" value="star" required>☆☆☆ </label>
+            <label><input id="starRating" type="radio" name="audience" value="star" required>☆☆☆☆ </label>
+            <label><input id="starRating" type="radio" name="audience" value="star" required>☆☆☆☆☆ </label>
+        </fieldset>
+        <fieldset>
+            <label>Date of Installation</label>
+            <input type="date" name="" id="instDate" required>
+        </fieldset>
+        <fieldset>
+
+            <label>Which features did you find useful in the product? (check all that apply)</label>
+            <label><input id="features" type="checkbox" name="durability" value="yes"> Durability </label>
+            <label><input id="features" type="checkbox" name="ease" value="yes"> Ease of Use </label>
+            <label><input id="features" type="checkbox" name="performance" value="yes"> Performance </label>
+            <label><input id="features" type="checkbox" name="design" value="yes"> Design </label>
+
+        </fieldset>
+        <fieldset>
+            <label>Writen review (optional)</label>
+            <textarea id="review" name="review"></textarea>
+        </fieldset>
+        <fieldset>
+            <label>Your name (optional)</label>
+            <input type="text" name="fname">
+
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Post Review">
+        </fieldset>
+
+
+    </form>
+
+
+    <main></main>
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>

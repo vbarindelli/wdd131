@@ -1,0 +1,49 @@
+.wf1,
+header,
+footer {
+    font-family: "Raleway", sans-serif;
+}
+
+.wf1 fieldset {
+    background-color: rgb(224, 224, 247);
+    border: none;
+}
+
+.wf1 label {
+    display: block;
+}
+
+
+
+h1,
+footer {
+    background-color: rgb(27, 27, 100);
+    color: beige;
+    text-align: center;
+    padding: .5em;
+    border-radius: 8px;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="submit"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 #review {
+    width: 100%;
+    max-width: 400px;
+    border: solid 1px grey;
+    border-radius: 8px;
+    padding: .75rem;
+
+}
+
+.wf1 #review {
+    height: 10em;
+}
+
+.wf1 input[type="submit"],
+.wf1 select {
+    width: 100%;
+    max-width: 425px;
+
+}

@@ -149,7 +149,7 @@ homeLink.addEventListener("click", () => {
 })
 
 const header = document.getElementsByClassName("container");
-const aciveLink = header.getElements
+const activeLink = header.getElements
 
 function createTempleCard(filteredTemples) {
     document.querySelector(".container").innerHTML = "";
