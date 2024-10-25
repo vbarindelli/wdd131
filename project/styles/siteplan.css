@@ -23,6 +23,7 @@ h1 {
 }
 
 
+
 a {
     text-decoration: none;
 }
@@ -82,11 +83,15 @@ nav {
     content: "\00d7";
 }
 
+section {
+    display: grid;
+    place-items: center;
+} 
+
 h2 {
     background-color: rgb(189, 55, 55);
     color: beige;
     text-align: center;
-    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
 }

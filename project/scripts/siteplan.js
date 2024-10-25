@@ -6,6 +6,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('show');
 })
 
+
 const year = document.querySelector("#currentyear");
 const today = new Date();
 year.innerHTML = `@ <span class="highlight">${today.getFullYear()}</span> Virginia Haedo - Malaga, Spain`;

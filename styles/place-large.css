@@ -18,7 +18,7 @@
 
     }
 
-    .weather {
+    .dataTwo {
         position: relative;
         bottom: 250px;
         float: right;
@@ -31,12 +31,12 @@
 
     }
 
-    div.weather {
+    div.dataTwo {
         background: none;
     }
 
     h2 {
-        background: green;
+        background: rgb(189, 55, 55);
         padding: 1em;
         width: 100%;
         margin-left: -3em;
@@ -44,15 +44,6 @@
 
     }
 
-    .weather h2::after {
-        content: "⛅";
-        padding-left: 1em;
-        display: inline-block
-    }
-
-    .icon {
-        display: none;
-    }
 
     picture img {
         width: 100%;

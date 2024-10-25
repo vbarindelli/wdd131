@@ -1,4 +1,4 @@
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 560px) {
     header {
         display: flex;
         align-items: center;
@@ -21,4 +21,67 @@
     #menu {
         display: none;
     }
+
+    h1 {
+        margin: 1em;
+    }
+
+    .container {
+        position: relative;
+        height: auto;
+
+    }
+
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        background: rgb(0, 0, 0);
+        background: rgba(252, 252, 252, 0.8);
+        min-width: 25%;
+        padding: 20px;
+        color: black;
+
+    }
+
+    .dataTwo {
+        position: relative;
+        bottom: 250px;
+        float: right;
+        right: 30px;
+        background: rgb(0, 0, 0);
+        background: rgba(252, 252, 252, 0.8);
+        min-width: 25%;
+        padding: 20px;
+        color: black;
+
+    }
+
+    div.dataTwo {
+        background: none;
+    }
+
+    h2 {
+        background: green;
+        padding: 1em;
+        width: 100%;
+        margin-left: -3em;
+        color: beige;
+
+    }
+
+    .dataTwo h2::after {
+
+        padding-left: 1em;
+        display: inline-block
+    }
+
+
+    picture img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
 }
