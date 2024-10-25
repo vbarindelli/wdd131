@@ -21,15 +21,4 @@
     #menu {
         display: none;
     }
-
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    h2 {
-        display: block;
-
-    }
-
 }
