@@ -203,5 +203,7 @@ fieldset {
     width: 100%;
     max-width: 425px;
     background-color: rgb(189, 55, 55);
+    color: beige;
+    font-weight: 500;
 
 }
