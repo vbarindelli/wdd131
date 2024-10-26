@@ -18,7 +18,7 @@
 
     }
 
-    .dataTwo {
+    .weather {
         position: relative;
         bottom: 250px;
         float: right;
@@ -31,12 +31,12 @@
 
     }
 
-    div.dataTwo {
+    div.weather {
         background: none;
     }
 
     h2 {
-        background: rgb(189, 55, 55);
+        background: green;
         padding: 1em;
         width: 100%;
         margin-left: -3em;
