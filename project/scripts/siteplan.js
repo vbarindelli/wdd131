@@ -97,37 +97,36 @@ const sites = [
 
 createActivityCard(sites);
 
-const summerOption = document.getElementById("#summer");
-summerOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => site.season.includes('summer')));
-});
+// const summerOption = document.getElementById("#summer");
+// summerOption.addEventListener("click", () => {
+//     createActivityCard(sites.filter(site => site.season.includes('summer')));
+// });
 
-const winterOption = document.getElementById("#winter");
-winterOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => site.season.includes('winter')));
-});
+// const winterOption = document.getElementById("#winter");
+// winterOption.addEventListener("click", () => {
+//     createActivityCard(sites.filter(site => site.season.includes('winter')));
+// });
 
-const springOption = document.getElementById("#spring");
-winterOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => site.season.includes('spring')));
-});
+// const springOption = document.getElementById("#spring");
+// winterOption.addEventListener("click", () => {
+//     createActivityCard(sites.filter(site => site.season.includes('spring')));
+// });
 
-const autumnOption = document.getElementById("#autumn");
-winterOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => site.season.includes('autumn')));
-});
+// const autumnOption = document.getElementById("#autumn");
+// winterOption.addEventListener("click", () => {
+//     createActivityCard(sites.filter(site => site.season.includes('autumn')));
+// });
 
 
-const noFilter = document.querySelector("#allSeasons");
-noFilter.addEventListener("click", () => {
-    createActivityCard(sites);
-});
+// const noFilter = document.querySelector("#allSeasons");
+// noFilter.addEventListener("click", () => {
+//     createActivityCard(sites);
+// });
 
-const header = document.getElementsByClassName("containerTwo");
-const activeLink = header.getElements
+// const header = document.getElementsByClassName("containerTwo");
+// const activeLink = header.getElements
 
 function createActivityCard(filteredSites) {
-    document.querySelector(".containerTwo").innerHTML = "";
     filteredSites.forEach(site => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
@@ -156,5 +155,39 @@ function createActivityCard(filteredSites) {
 
         document.querySelector(".containerTwo").appendChild(card);
     });
+
 }
+const reset = function () {
+    document.querySelector(".containerTwo").innerHTML = "";
+}
+
+function filterSites(sites) {
+    reset();
+
+    let filter = document.getElementById('filtered').value;
+
+    switch (filter) {
+        case 'summer':
+            createActivityCard(sites.filter(site => site.season.includes('summer')));
+            break;
+
+        case 'winter':
+            createActivityCard(sites.filter(site => site.season.includes('winter')));
+            break;
+
+        case 'spring':
+            createActivityCard(sites.filter(site => site.season.includes('spring')));
+            break;
+
+        case 'autumn':
+            createActivityCard(sites.filter(site => site.season.includes('autumn')));
+            break;
+
+        case 'all':
+            createActivityCard(sites);
+    }
+
+}
+
+document.querySelector("#filtered").addEventListener("change", () => { filterSites(sites) });
 
