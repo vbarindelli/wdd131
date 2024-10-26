@@ -11,6 +11,17 @@ const year = document.querySelector("#currentyear");
 const today = new Date();
 year.innerHTML = `@ <span class="highlight">${today.getFullYear()}</span> Virginia Haedo - Malaga, Spain`;
 
+const visitsDisplay = document.querySelector(".visits");
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
 
 
 const lastModified = document.querySelector("#lastModified");
@@ -53,7 +64,7 @@ const sites = [
         season: "winter, autumn, spring",
         description: "A window into the past, the Real Alcazar is a complex of palaces that were built starting in the Middle Ages",
         imageUrl:
-            "https://es.wikipedia.org/wiki/Real_Alc%C3%A1zar_de_Sevilla#/media/Archivo:Patio_del_Yeso_(P%C3%B3rtico)._Reales_Alc%C3%A1zares_de_Sevilla.jpg"
+            "https://www.spain.info/.content/imagenes/cabeceras-grandes/andalucia/jardines-real-alcazar-sevilla-s342325979-c-danor-aharon.jpg"
     },
     {
         siteName: "Playa de Cabopino",
@@ -97,36 +108,33 @@ const sites = [
 
 createActivityCard(sites);
 
-// const summerOption = document.getElementById("#summer");
-// summerOption.addEventListener("click", () => {
-//     createActivityCard(sites.filter(site => site.season.includes('summer')));
-// });
+const summerLink = document.querySelector("#summer");
+summerLink.addEventListener("click", () => {
+    createActivityCard(sites.filter(site => site.season.includes("summer")));
+});
 
-// const winterOption = document.getElementById("#winter");
-// winterOption.addEventListener("click", () => {
-//     createActivityCard(sites.filter(site => site.season.includes('winter')));
-// });
+const winterLink = document.querySelector("#winter");
+winterLink.addEventListener("click", () => {
+    createActivityCard(sites.filter(site => site.season.includes("winter")));
+});
 
-// const springOption = document.getElementById("#spring");
-// winterOption.addEventListener("click", () => {
-//     createActivityCard(sites.filter(site => site.season.includes('spring')));
-// });
+const springLink = document.querySelector("#spring");
+springLink.addEventListener("click", () => {
+    createActivityCard(sites.filter(site => site.season.includes("spring")));
+});
 
-// const autumnOption = document.getElementById("#autumn");
-// winterOption.addEventListener("click", () => {
-//     createActivityCard(sites.filter(site => site.season.includes('autumn')));
-// });
+const autumnLink = document.querySelector("#autumn");
+autumnLink.addEventListener("click", () => {
+    createActivityCard(sites.filter(site => site.season.includes("autumn")));
+});
 
-
-// const noFilter = document.querySelector("#allSeasons");
-// noFilter.addEventListener("click", () => {
-//     createActivityCard(sites);
-// });
-
-// const header = document.getElementsByClassName("containerTwo");
-// const activeLink = header.getElements
+const allLink = document.querySelector("#all");
+allLink.addEventListener("click", () => {
+    createActivityCard(sites);
+});
 
 function createActivityCard(filteredSites) {
+    document.querySelector(".containerTwo").innerHTML = "";
     filteredSites.forEach(site => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
@@ -155,39 +163,4 @@ function createActivityCard(filteredSites) {
 
         document.querySelector(".containerTwo").appendChild(card);
     });
-
 }
-const reset = function () {
-    document.querySelector(".containerTwo").innerHTML = "";
-}
-
-function filterSites(sites) {
-    reset();
-
-    let filter = document.getElementById('filtered').value;
-
-    switch (filter) {
-        case 'summer':
-            createActivityCard(sites.filter(site => site.season.includes('summer')));
-            break;
-
-        case 'winter':
-            createActivityCard(sites.filter(site => site.season.includes('winter')));
-            break;
-
-        case 'spring':
-            createActivityCard(sites.filter(site => site.season.includes('spring')));
-            break;
-
-        case 'autumn':
-            createActivityCard(sites.filter(site => site.season.includes('autumn')));
-            break;
-
-        case 'all':
-            createActivityCard(sites);
-    }
-
-}
-
-document.querySelector("#filtered").addEventListener("change", () => { filterSites(sites) });
-

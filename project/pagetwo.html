@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan-large.css">
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
     <script src="scripts/siteplan.js" defer></script>
 </head>
 
@@ -30,13 +30,53 @@
         </nav>
     </header>
     <main>
-   
+        <h2>If you come, you will want to stay</h2>
+        <div class="containerThree">
+            <section id="education">
+                <h3>Education</h3>
+                <p>Education in Andalucia is mandatory for people from five to sixteen years old, it is guaranteed for
+                    all,
+                    and schools are assigned based on the person's location. For more information, you can follow the
+                    link to the Junta de Andalucia.
+                </p>
+                <li><a
+                        href="https://www.juntadeandalucia.es/educacion/portals/delegate/content/496ed9f5-4d01-44f8-9253-d9121858d47b">
+                        Andalusian education system</a></li>
+            </section>
+            <section id="health">
+                <h3>Health</h3>
+                <p>Andalucia has a system of public health with a network of primary care centers and dedicated
+                    specialists
+                    for complex situations. In the following link you can find valuable information for each particular
+                    case.</p>
+                <li><a href="https://www.andalucia.org/en/traveler-information/healthcare">Information for
+                        Healthcare</a>
+                </li>
+            </section>
+            <section id="cost of living">
+                <h3>Cost of Living</h3>
+                <p>This is another reason why Andalucia is the prefered choice by many: the cost of living is
+                    significantly
+                    lower than in other majors cities within Spain. Follow the link to get more details for living
+                    expenses.</p>
+                <li><a href="https://www.numbeo.com/cost-of-living/in/Malaga">Cost of living analysis</a></li>
+            </section>
+        </div>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>If you have any further questions, reach out and we'll be happy to provide further
+                    information.</label>
+                <textarea id="review" name="review"></textarea>
+                <input type="submit" value="Request information.">
+            </fieldset>
+        </form>
     </main>
 
 
     <footer>
         <p><span id="currentyear"></span></p>
         <p><span id="lastModified"></span></p>
+        <p><span class="label">Number of visits: </span><span class="visits"></span></p>
     </footer>
 </body>
 
