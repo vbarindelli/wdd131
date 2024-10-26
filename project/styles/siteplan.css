@@ -111,6 +111,41 @@ footer {
     text-align: center;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-row: 2/3;
+}
+
+section {
+    margin: auto;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    max-width: 520px;
+}
+
 p {
     text-align: center;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+#cardImg {
+    max-width: 420px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    margin: 1em;
+
+}
+
+.containerTwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-row: 2/3;
 }

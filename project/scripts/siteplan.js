@@ -94,46 +94,47 @@ const sites = [
     },
 
 ];
+
 createActivityCard(sites);
 
 const summerOption = document.getElementById("#summer");
 summerOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => season = "summer"));
-})
+    createActivityCard(sites.filter(site => site.season.includes('summer')));
+});
 
 const winterOption = document.getElementById("#winter");
 winterOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => season = "winter"));
-})
+    createActivityCard(sites.filter(site => site.season.includes('winter')));
+});
 
 const springOption = document.getElementById("#spring");
 winterOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => season = "spring"));
-})
+    createActivityCard(sites.filter(site => site.season.includes('spring')));
+});
 
 const autumnOption = document.getElementById("#autumn");
 winterOption.addEventListener("click", () => {
-    createActivityCard(sites.filter(site => season = "autumn"));
-})
+    createActivityCard(sites.filter(site => site.season.includes('autumn')));
+});
 
 
 const noFilter = document.querySelector("#allSeasons");
 noFilter.addEventListener("click", () => {
     createActivityCard(sites);
-})
+});
 
-const header = document.getElementsByClassName("container");
+const header = document.getElementsByClassName("containerTwo");
 const activeLink = header.getElements
 
 function createActivityCard(filteredSites) {
-    document.querySelector(".container").innerHTML = "";
+    document.querySelector(".containerTwo").innerHTML = "";
     filteredSites.forEach(site => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let price = document.createElement("p");
         let season = document.createElement("p");
-        let description = dicument.createElement("p");
+        let description = document.createElement("p");
         let img = document.createElement("img");
 
         name.textContent = site.siteName;
@@ -144,6 +145,7 @@ function createActivityCard(filteredSites) {
         img.setAttribute("src", site.imageUrl);
         img.setAttribute("alt", `${site.siteName}`);
         img.setAttribute("loading", "lazy");
+        img.setAttribute("id", "cardImg");
 
         card.appendChild(name);
         card.appendChild(location);
@@ -152,7 +154,7 @@ function createActivityCard(filteredSites) {
         card.appendChild(description);
         card.appendChild(img);
 
-        document.querySelector(".container").appendChild(card);
+        document.querySelector(".containerTwo").appendChild(card);
     });
 }
 

@@ -66,5 +66,9 @@
         padding: 4em;
     }
 
-   
+    .containerTwo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 }
