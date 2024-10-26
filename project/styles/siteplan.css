@@ -69,7 +69,7 @@ nav {
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover {
+a:hover {
     background-color: rgb(189, 55, 55);
 }
 
@@ -176,6 +176,7 @@ a {
 }
 
 fieldset {
+    place-items: center;
     border: none;
 
 }
@@ -194,6 +195,7 @@ fieldset {
 }
 
 .wf1 #review {
+    margin-top: 1em;
     height: 10em;
 }
 
